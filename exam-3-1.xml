@@ -4,11 +4,12 @@
         xmlns:us-gaap="http://fasb.org/us-gaap/2024"
         xmlns:xlink="http://www.w3c.org/1999/xlink"
 >
-<!--    SCHEMA REFERENCE-->
+<!--!    SCHEMA REFERENCE-->
     <schemaRef xlink:type="simple" xlink:href="http://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"></schemaRef>
 
-<!--    CONTEXT ELEMENTS-->
-    <!--    Context Element for 2024-->
+<!--!    CONTEXT ELEMENTS-->
+
+    <!--.Context Element for 2024-->
     <xbrli:context id="AsOfDec312024">
         <xbrli:entity>
             <xbrli:identifier scheme="http://sec.gov/CIK">0000012345</xbrli:identifier>
@@ -19,7 +20,7 @@
     </xbrli:context>
 
 
-    <!--    Context Element for 2023-->
+    <!--.Context Element for 2023-->
     <xbrli:context id="AsOfDec312023">
         <xbrli:entity>
             <xbrli:identifier scheme="http://sec.gov/CIK">0000012345</xbrli:identifier>
@@ -29,13 +30,16 @@
         </xbrli:period>
     </xbrli:context>
 
-<!--    MONEY TYPE-->
+<!--!    MONEY TYPE-->
+
     <xbrli:unit id="USD">
         <measure>iso4217:USD</measure>
     </xbrli:unit>
 
-<!--    FACTS-->
-
+<!--!    FACTS-->
+<!--/    Assets-->
+<!--.    Current Assets-->
+<!--     TODO Do I have to use any other details in the taxonomy like abstract and nillable-->
 <!--        Cash and cash equivalents-->
 <!--        2024-->
             <us-gaap:CashEquivalentsAtCarryingValue contextRef="AsOfDec312024" unitRef="USD" decimals="-3">111000</us-gaap:CashEquivalentsAtCarryingValue>
@@ -71,4 +75,146 @@
             <us-gaap:PrepaidRent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">8000</us-gaap:PrepaidRent>
 <!--        2023-->
             <us-gaap:PrepaidRent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">7000</us-gaap:PrepaidRent>
+
+<!--.       Total Current Assets -->
+<!--        2024 -->
+            <us-gaap:AssetsCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">1339000</us-gaap:AssetsCurrent>
+<!--        2023 -->
+            <us-gaap:AssetsCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">1330000</us-gaap:AssetsCurrent>
+
+<!--.    Noncurrent Assets-->
+<!--        Property, plant & equipment, net-->
+<!--        2024 -->
+            <us-gaap:PropertyPlantAndEquipmentNet contextRef="AsOfDec312024" unitRef="USD" decimals="-3">668000</us-gaap:PropertyPlantAndEquipmentNet>
+<!--        2023 -->
+            <us-gaap:PropertyPlantAndEquipmentNet contextRef="AsOfDec312023" unitRef="USD" decimals="-3">669000</us-gaap:PropertyPlantAndEquipmentNet>
+
+<!--        Marketable securities, noncurrent-->
+<!--        2024 -->
+            <us-gaap:MarketableSecuritiesNoncurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">19000</us-gaap:MarketableSecuritiesNoncurrent>
+<!--        2023 -->
+            <us-gaap:MarketableSecuritiesNoncurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">19000</us-gaap:MarketableSecuritiesNoncurrent>
+
+<!--        Prepaid expenses, noncurrent-->
+<!--        2024 -->
+            <us-gaap:PrepaidExpenseNoncurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">32000</us-gaap:PrepaidExpenseNoncurrent>
+<!--        2023 -->
+            <us-gaap:PrepaidExpenseNoncurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">30000</us-gaap:PrepaidExpenseNoncurrent>
+
+<!--        Advanced royalties-->
+<!--        2024 -->
+            <us-gaap:AdvanceRoyalties contextRef="AsOfDec312024" unitRef="USD" decimals="-3">21000</us-gaap:AdvanceRoyalties>
+<!--        2023 -->
+            <us-gaap:AdvanceRoyalties contextRef="AsOfDec312023" unitRef="USD" decimals="-3">19000</us-gaap:AdvanceRoyalties>
+
+<!--.       Total noncurrent assets-->
+<!--        2024 -->
+            <us-gaap:AssetsNoncurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">740000</us-gaap:AssetsNoncurrent>
+<!--        2023 -->
+            <us-gaap:AssetsNoncurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">737000</us-gaap:AssetsNoncurrent>
+
+<!--/       Total Assets-->
+<!--        2024 -->
+            <us-gaap:Assets contextRef="AsOfDec312024" unitRef="USD" decimals="-3">2079000</us-gaap:Assets>
+<!--        2023 -->
+            <us-gaap:Assets contextRef="AsOfDec312023" unitRef="USD" decimals="-3">2067000</us-gaap:Assets>
+
+<!--/   Liabilities-->
+<!--.   Current Liabilities-->
+<!--        Accounts payable-->
+<!--        2024 -->
+            <us-gaap:AccountsPayableCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">109000</us-gaap:AccountsPayableCurrent>
+<!--        2023 -->
+            <us-gaap:AccountsPayableCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">111000</us-gaap:AccountsPayableCurrent>
+
+<!--        Employee-related payables-->
+<!--        2024 -->
+            <us-gaap:EmployeeRelatedLiabilitiesCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">9000</us-gaap:EmployeeRelatedLiabilitiesCurrent>
+<!--        2023 -->
+            <us-gaap:EmployeeRelatedLiabilitiesCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">9000</us-gaap:EmployeeRelatedLiabilitiesCurrent>
+
+<!--        Construction loan-->
+<!--        2024 -->
+            <us-gaap:ConstructionLoan contextRef="AsOfDec312024" unitRef="USD" decimals="-3">24000</us-gaap:ConstructionLoan>
+<!--        2023 -->
+            <us-gaap:ConstructionLoan contextRef="AsOfDec312023" unitRef="USD" decimals="-3">24000</us-gaap:ConstructionLoan>
+
+<!--        TODO there are two taxonomy: LineOfCredit and LinesOfCreditCurrent. However, there is no non current. Which one should I use? (Currently using LineOfCredit)-->
+<!--        Line of credit-->
+<!--        2024 -->
+            <us-gaap:LineOfCredit contextRef="AsOfDec312024" unitRef="USD" decimals="-3">12000</us-gaap:LineOfCredit>
+<!--        2023 -->
+            <us-gaap:LineOfCredit contextRef="AsOfDec312023" unitRef="USD" decimals="-3">12000</us-gaap:LineOfCredit>
+
+<!--        Note payable-->
+<!--        2024 -->
+            <us-gaap:NotesPayable contextRef="AsOfDec312024" unitRef="USD" decimals="-3">31000</us-gaap:NotesPayable>
+<!--        2023 -->
+            <us-gaap:NotesPayable contextRef="AsOfDec312023" unitRef="USD" decimals="-3">31000</us-gaap:NotesPayable>
+
+<!--        Other current liabilities-->
+<!--        2024 -->
+            <us-gaap:OtherLiabilitiesCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">540000</us-gaap:OtherLiabilitiesCurrent>
+<!--        2023 -->
+            <us-gaap:OtherLiabilitiesCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">538000</us-gaap:OtherLiabilitiesCurrent>
+
+<!--.       Total current liabilities-->
+<!--        2024 -->
+            <us-gaap:LiabilitiesCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">725000</us-gaap:LiabilitiesCurrent>
+<!--        2023 -->
+            <us-gaap:LiabilitiesCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">725000</us-gaap:LiabilitiesCurrent>
+
+<!--.   Noncurrent Liabilities-->
+<!--        Long-term line of credit-->
+<!--        2024 -->
+            <us-gaap:LongTermLineOfCredit contextRef="AsOfDec312024" unitRef="USD" decimals="-3">885000</us-gaap:LongTermLineOfCredit>
+<!--        2023 -->
+            <us-gaap:LongTermLineOfCredit contextRef="AsOfDec312023" unitRef="USD" decimals="-3">883000</us-gaap:LongTermLineOfCredit>
+
+<!--        TODO Is the taxonomy "OperatingLeaseLiability" correct?-->
+<!--        Operating lease obligation-->
+<!--        2024 -->
+            <us-gaap:OperatingLeaseLiability contextRef="AsOfDec312024" unitRef="USD" decimals="-3">321000</us-gaap:OperatingLeaseLiability>
+<!--        2023 -->
+            <us-gaap:OperatingLeaseLiability contextRef="AsOfDec312023" unitRef="USD" decimals="-3">319000</us-gaap:OperatingLeaseLiability>
+
+<!--.       Total noncurrent liabilities-->
+<!--        2024 -->
+            <us-gaap:LiabilitiesNoncurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">1206000</us-gaap:LiabilitiesNoncurrent>
+<!--        2023 -->
+            <us-gaap:LiabilitiesNoncurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">1202000</us-gaap:LiabilitiesNoncurrent>
+
+<!--/       Total Liabilities-->
+<!--        2024 -->
+            <us-gaap:Liabilities contextRef="AsOfDec312024" unitRef="USD" decimals="-3">1931000</us-gaap:Liabilities>
+<!--        2023 -->
+            <us-gaap:Liabilities contextRef="AsOfDec312023" unitRef="USD" decimals="-3">1927000</us-gaap:Liabilities>
+
+<!--/   Stockholders' Equity-->
+<!--        TODO Is the taxonomy "CommonStockValue" correct?-->
+<!--        Common stock-->
+<!--        2024 -->
+            <us-gaap:CommonStockValue contextRef="AsOfDec312024" unitRef="USD" decimals="-3">55000</us-gaap:CommonStockValue>
+<!--        2023 -->
+            <us-gaap:CommonStockValue contextRef="AsOfDec312023" unitRef="USD" decimals="-3">55000</us-gaap:CommonStockValue>
+
+<!--        Common stock-->
+<!--        2024 -->
+            <us-gaap:AdditionalPaidInCapital contextRef="AsOfDec312024" unitRef="USD" decimals="-3">11000</us-gaap:AdditionalPaidInCapital>
+<!--        2023 -->
+            <us-gaap:AdditionalPaidInCapital contextRef="AsOfDec312023" unitRef="USD" decimals="-3">11000</us-gaap:AdditionalPaidInCapital>
+
+<!--        TODO Is the taxonomy "RetainedEarningsAccumulatedDeficit" correct?-->
+<!--        Retained Earnings -->
+<!--        2024 -->
+            <us-gaap:RetainedEarningsAccumulatedDeficit contextRef="AsOfDec312024" unitRef="USD" decimals="-3">82000</us-gaap:RetainedEarningsAccumulatedDeficit>
+<!--        2023 -->
+            <us-gaap:RetainedEarningsAccumulatedDeficit contextRef="AsOfDec312023" unitRef="USD" decimals="-3">74000</us-gaap:RetainedEarningsAccumulatedDeficit>
+
+<!--!    TOTAL LIABILITIES  AND SH EQUITY-->
+<!--        TODO Do I also add total stockholders' equity since it is not in the spreadsheet or I calculate the total liability without calculating total stockholders' equity?-->
+<!--        2024 -->
+            <us-gaap:LiabilitiesAndStockholdersEquity contextRef="AsOfDec312024" unitRef="USD" decimals="-3">2079000</us-gaap:LiabilitiesAndStockholdersEquity>
+<!--        2023 -->
+            <us-gaap:LiabilitiesAndStockholdersEquity contextRef="AsOfDec312023" unitRef="USD" decimals="-3">2067000</us-gaap:LiabilitiesAndStockholdersEquity>
 </xbrli:xbrl>
