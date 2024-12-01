@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xbrli:xbrl
+        xmlns:xbrli="http://www.xbrl.org/2003/instance"
+        xmlns:us-gaap="http://fasb.org/us-gaap/2024"
+        xmlns:xlink="http://www.w3c.org/1999/xlink"
+>
+<!--    SCHEMA REFERENCE-->
+    <schemaRef xlink:type="simple" xlink:href="http://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"></schemaRef>
+
+<!--    CONTEXT ELEMENTS-->
+    <!--    Context Element for 2024-->
+    <xbrli:context id="AsOfDec312024">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://sec.gov/CIK">0000012345</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+            <xbrli:instant>2024-12-31</xbrli:instant>
+        </xbrli:period>
+    </xbrli:context>
+
+
+    <!--    Context Element for 2023-->
+    <xbrli:context id="AsOfDec312023">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://sec.gov/CIK">0000012345</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+            <xbrli:instant>2023-12-31</xbrli:instant>
+        </xbrli:period>
+    </xbrli:context>
+
+<!--    MONEY TYPE-->
+    <xbrli:unit id="USD">
+        <measure>iso4217:USD</measure>
+    </xbrli:unit>
+
+<!--    FACTS-->
+
+<!--        Cash and cash equivalents-->
+<!--        2024-->
+            <us-gaap:CashEquivalentsAtCarryingValue contextRef="AsOfDec312024" unitRef="USD" decimals="-3">111000</us-gaap:CashEquivalentsAtCarryingValue>
+<!--        2023-->
+            <us-gaap:CashEquivalentsAtCarryingValue contextRef="AsOfDec312023" unitRef="USD" decimals="-3">109000</us-gaap:CashEquivalentsAtCarryingValue>
+
+<!--        Marketable Securities-->
+<!--        2024-->
+            <us-gaap:MarketableSecuritiesCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">72000</us-gaap:MarketableSecuritiesCurrent>
+<!--        2023-->
+            <us-gaap:MarketableSecuritiesCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">72000</us-gaap:MarketableSecuritiesCurrent>
+
+<!--        Unbilled receivables-->
+<!--        2024-->
+            <us-gaap:UnbilledReceivablesCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">48000</us-gaap:UnbilledReceivablesCurrent>
+<!--        2023-->
+            <us-gaap:UnbilledReceivablesCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">47000</us-gaap:UnbilledReceivablesCurrent>
+
+<!--        Accounts receivable, net-->
+<!--        2024-->
+            <us-gaap:ReceivablesNetCurrent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">101000</us-gaap:ReceivablesNetCurrent>
+<!--        2023-->
+            <us-gaap:ReceivablesNetCurrent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">98000</us-gaap:ReceivablesNetCurrent>
+
+<!--        Inventory, net-->
+<!--        2024-->
+            <us-gaap:InventoryNet contextRef="AsOfDec312024" unitRef="USD" decimals="-3">999000</us-gaap:InventoryNet>
+<!--        2023-->
+            <us-gaap:InventoryNet contextRef="AsOfDec312023" unitRef="USD" decimals="-3">997000</us-gaap:InventoryNet>
+
+<!--        Prepaid rent-->
+<!--        2024-->
+            <us-gaap:PrepaidRent contextRef="AsOfDec312024" unitRef="USD" decimals="-3">8000</us-gaap:PrepaidRent>
+<!--        2023-->
+            <us-gaap:PrepaidRent contextRef="AsOfDec312023" unitRef="USD" decimals="-3">7000</us-gaap:PrepaidRent>
+</xbrli:xbrl>
