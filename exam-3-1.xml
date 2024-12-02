@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xbrli:xbrl
         xmlns:xbrli="http://www.xbrl.org/2003/instance"
-        xmlns:us-gaap="http://fasb.org/us-gaap/2024"
-        xmlns:xlink="http://www.w3c.org/1999/xlink"
+        xmlns:link="http://www.xbrl.org/2003/linkbase"
+        xmlns:us-gaap="http://xbrl.fasb.org/us-gaap/2024"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
 >
 <!--!    SCHEMA REFERENCE-->
-    <schemaRef xlink:type="simple" xlink:href="http://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"></schemaRef>
+    <link:schemaRef xlink:type="simple" xlink:href="http://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
 
 <!--!    CONTEXT ELEMENTS-->
-
     <!--.Context Element for 2024-->
     <xbrli:context id="AsOfDec312024">
         <xbrli:entity>
@@ -33,7 +34,7 @@
 <!--!    MONEY TYPE-->
 
     <xbrli:unit id="USD">
-        <measure>iso4217:USD</measure>
+        <xbrli:measure>iso4217:USD</xbrli:measure>
     </xbrli:unit>
 
 <!--!    FACTS-->

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xbrli:xbrl
+        xmlns:xbrli="http://www.xbrl.org/2003/instance"
+        xmlns:link="http://www.xbrl.org/2003/linkbase"
+        xmlns:us-gaap="http://xbrl.fasb.org/us-gaap/2024"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+>
+    <!--!    SCHEMA REFERENCE-->
+    <link:schemaRef xlink:type="simple" xlink:href="http://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+
+    <!--!    CONTEXT ELEMENTS-->
+    <!--.Context Element for the year ended 12/31/2024-->
+    <xbrli:context id="ForTheYearEndedDec312024">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://sec.gov/CIK">0000012345</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+            <xbrli:startDate>2024-01-01</xbrli:startDate>
+            <xbrli:endtDate>2024-12-31</xbrli:endtDate>
+        </xbrli:period>
+    </xbrli:context>
+
+    <!--.Context Element for the year ended 12/31/2024-->
+    <xbrli:context id="ForTheYearEndedDec312023">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://sec.gov/CIK">0000012345</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endtDate>2023-12-31</xbrli:endtDate>
+        </xbrli:period>
+    </xbrli:context>
+
+    <!--!    MONEY TYPE-->
+
+    <xbrli:unit id="USD">
+        <xbrli:measure>iso4217:USD</xbrli:measure>
+    </xbrli:unit>
+
+    <!--!    FACTS-->
+<!--    Sales and services revenue-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:Revenues contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">169000</us-gaap:Revenues>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:Revenues contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">161000</us-gaap:Revenues>
+
+<!--    TODO Check if the taxonomy is correct-->
+<!--    Materials expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:CostDirectMaterial contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">21000</us-gaap:CostDirectMaterial>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:CostDirectMaterial contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">18000</us-gaap:CostDirectMaterial>
+
+<!--    TODO Check if the taxonomy is correct-->
+<!--    Labor expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:CostDirectLabor contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">18000</us-gaap:CostDirectLabor>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:CostDirectLabor contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">18000</us-gaap:CostDirectLabor>
+
+<!--    TODO Check if the taxonomy is correct-->
+<!--    Materials expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:CostMaintenance contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">9000</us-gaap:CostMaintenance>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:CostMaintenance contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">9000</us-gaap:CostMaintenance>
+
+<!--    Materials expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:CostMaintenance contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">23000</us-gaap:CostMaintenance>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:CostMaintenance contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">22000</us-gaap:CostMaintenance>
+
+<!--.   Gross Profit-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:GrossProfit contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">98000</us-gaap:GrossProfit>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:GrossProfit contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">94000</us-gaap:GrossProfit>
+
+<!--    Research and development expenses-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:ResearchAndDevelopmentExpense contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">3000</us-gaap:ResearchAndDevelopmentExpense>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:ResearchAndDevelopmentExpense contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">3000</us-gaap:ResearchAndDevelopmentExpense>
+
+<!--    Advertising expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:AdvertisingExpense contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">2000</us-gaap:AdvertisingExpense>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:AdvertisingExpense contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">4000</us-gaap:AdvertisingExpense>
+
+<!--    Warranty expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:ProductWarrantyExpense contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">3000</us-gaap:ProductWarrantyExpense>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:ProductWarrantyExpense contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">5000</us-gaap:ProductWarrantyExpense>
+
+<!--    General insurance expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:GeneralInsuranceExpense contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">2000</us-gaap:GeneralInsuranceExpense>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:GeneralInsuranceExpense contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">2000</us-gaap:GeneralInsuranceExpense>
+
+<!--.   Income from operations-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:OperatingIncomeLoss contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">88000</us-gaap:OperatingIncomeLoss>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:OperatingIncomeLoss contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">80000</us-gaap:OperatingIncomeLoss>
+
+<!--    Nonoperating income-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:NonoperatingIncomeExpense contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">3000</us-gaap:NonoperatingIncomeExpense>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:NonoperatingIncomeExpense contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">2000</us-gaap:NonoperatingIncomeExpense>
+
+<!--.   Income from continuing operations-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:IncomeLossFromContinuingOperations contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">91000</us-gaap:IncomeLossFromContinuingOperations>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:IncomeLossFromContinuingOperations contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">82000</us-gaap:IncomeLossFromContinuingOperations>
+
+<!--    Income tax expense-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:IncomeTaxExpenseBenefit contextRef="ForTheYearEndedDec312024" unitRef="USD" decimals="-3">9000</us-gaap:IncomeTaxExpenseBenefit>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:IncomeTaxExpenseBenefit contextRef="ForTheYearEndedDec312023" unitRef="USD" decimals="-3">8000</us-gaap:IncomeTaxExpenseBenefit>
+
+<!--    TODO How should I add decimals to the shares information-->
+<!--.   Earnings per common share (Basic)-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:EarningsPerShareBasic contextRef="ForTheYearEndedDec312024" unitRef="USD">0.08</us-gaap:EarningsPerShareBasic>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:EarningsPerShareBasic contextRef="ForTheYearEndedDec312023" unitRef="USD">0.07</us-gaap:EarningsPerShareBasic>
+
+<!--.   Weighted avg common shares outstanding (Basic)-->
+<!--    for the year ended 12/31/2024-->
+        <us-gaap:WeightedAverageNumberOfSharesOutstandingBasic contextRef="ForTheYearEndedDec312024" unitRef="USD">998000</us-gaap:WeightedAverageNumberOfSharesOutstandingBasic>
+<!--    for the year ended 12/31/2023-->
+        <us-gaap:WeightedAverageNumberOfSharesOutstandingBasic contextRef="ForTheYearEndedDec312023" unitRef="USD">998000</us-gaap:WeightedAverageNumberOfSharesOutstandingBasic>
+
+</xbrli:xbrl>
